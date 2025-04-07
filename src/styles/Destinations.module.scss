@@ -1,0 +1,165 @@
+.destinations {
+  padding: 10rem 0;
+  background: #fff;
+
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: 6rem;
+
+    .subtitle {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #df6951;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 4.4rem;
+    font-weight: 700;
+    color: #181e4b;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .destinationsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .destinationCard {
+    border-radius: 24px;
+    width: 75%;
+    overflow: hidden;
+    box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    text-align: left;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  .destinationImage {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+
+    .destinationCard:hover & {
+      transform: scale(1.05);
+    }
+  }
+
+  .durationBadge {
+    position: absolute;
+    padding: 0.8rem 1.6rem;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #5e6282;
+  }
+
+  .namePriceRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+    h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #181E4B;
+      margin: 0;
+    }
+
+    .price {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #DF6951;
+    }
+  }
+
+  .durationRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .duration {
+      font-size: 0.875rem;
+      color: #5E6282;
+    }
+  }
+
+  .destinationInfo {
+    padding: 2rem;
+    background: white;
+
+    h3 {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #5e6282;
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #5e6282;
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .destinationsGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 6rem 0;
+
+    .sectionHeader {
+      margin-bottom: 4rem;
+
+      .subtitle {
+        font-size: 1.6rem;
+      }
+    }
+
+    h2 {
+      font-size: 3.2rem;
+    }
+
+    .destinationsGrid {
+      grid-template-columns: 1fr;
+    }
+
+    .imageContainer {
+      height: 350px;
+    }
+  }
+}

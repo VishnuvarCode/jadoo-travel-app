@@ -1,0 +1,66 @@
+.services {
+    padding: 8rem 0;
+    background: #f9f9f9;
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+  
+    h5 {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: #5E6282;
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+  
+    h2 {
+      text-align: center;
+      font-size: 3.2rem;
+      color: #181E4B;
+      margin-bottom: 6rem;
+    }
+  
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+    }
+  
+    .card {
+      background: #fff;
+      padding: 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-1rem);
+      }
+  
+      img {
+        width: 6.8rem;
+        height: 6rem;
+        margin-bottom: 2rem;
+      }
+      
+      h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: #181E4B;
+      }
+  
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6rem;
+        color: #5E6282;
+        line-height: 1.6;
+      }
+    }
+  }

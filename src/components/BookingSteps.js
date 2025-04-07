@@ -20,8 +20,8 @@ export default function BookingSteps() {
                     <Image
                       src="/images/Group 7.png"
                       alt="Destination"
-                      width={20}
-                      height={20}
+                      width={40}
+                      height={40}
                     />
                   </div>
                 </div>
@@ -40,8 +40,8 @@ export default function BookingSteps() {
                     <Image
                       src="/images/Group 12.png"
                       alt="Payment"
-                      width={20}
-                      height={20}
+                      width={40}
+                      height={40}
                     />
                   </div>
                 </div>
@@ -60,8 +60,8 @@ export default function BookingSteps() {
                     <Image
                       src="/images/Group 11.png"
                       alt="Airport"
-                      width={20}
-                      height={20}
+                      width={40}
+                      height={40}
                     />
                   </div>
                 </div>
@@ -86,9 +86,41 @@ export default function BookingSteps() {
                   className={styles.image}
                 />
               </div>
+
               <div className={styles.tripDetails}>
                 <h4>Trip To Greece</h4>
-                <p className={styles.tripDate}>14-29 June | by Robbin jr</p>
+                <p className={styles.tripDate}>14-29 June | by Robbin john</p>
+
+                <div className={styles.iconsWrapper}>
+                  <div className={styles.iconContainer}>
+                    <Image
+                      src="/images/LEAF.png"
+                      alt="Leaf icon"
+                      width={20}
+                      height={20}
+                      className={styles.icon}
+                    />
+                  </div>
+                  <div className={styles.iconContainer}>
+                    <Image
+                      src="/images/map icon.png"
+                      alt="Map icon"
+                      width={20}
+                      height={20}
+                      className={styles.icon}
+                    />
+                  </div>
+                  <div className={styles.iconContainer}>
+                    <Image
+                      src="/images/send.png"
+                      alt="Send icon"
+                      width={20}
+                      height={20}
+                      className={styles.icon}
+                    />
+                  </div>
+                </div>
+
                 <div className={styles.tripMeta}>
                   <span className={styles.peopleGoing}>
                     <Image
@@ -99,6 +131,16 @@ export default function BookingSteps() {
                     />
                     24 people going
                   </span>
+
+                  <div className={styles.HeartIconContainer}>
+                    <Image
+                      src="/images/VectorHeart.png"
+                      alt="Send icon"
+                      width={16}
+                      height={16}
+                      className={styles.heartIcon}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -109,15 +151,17 @@ export default function BookingSteps() {
                   <span className={styles.ongoing}>Ongoing</span>
                   <h4>Trip to Rome</h4>
                 </div>
+
+                <p className={styles.progressText}>
+                  <span className={styles.percentage}>40% </span>completed
+                </p>
+
                 <div className={styles.progressBar}>
                   <div
                     className={styles.progressFill}
                     style={{ width: "40%" }}
                   ></div>
                 </div>
-                <p className={styles.progressText}>
-                  <span className={styles.percentage}>40% </span>completed
-                </p>
               </div>
               <div className={styles.progressImage}>
                 <Image

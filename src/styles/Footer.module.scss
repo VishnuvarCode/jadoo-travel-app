@@ -1,0 +1,193 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 80px 0 30px;
+  color: #5e6282;
+  font-family: "Poppins", sans-serif;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+
+  .brandColumn {
+    flex: 1;
+    min-width: 250px;
+
+    .logo {
+      font-family: "Poppins", sans-serif;
+      font-size: 44px;
+      font-weight: 700;
+      color: #181e4b;
+      margin-bottom: 20px;
+    }
+
+    .tagline {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      max-width: 300px;
+    }
+  }
+
+  .navColumns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    flex: 2;
+  }
+
+  .navColumn {
+    min-width: 120px;
+
+    .columnTitle {
+      font-size: 18px;
+      font-weight: 700;
+      color: #181e4b;
+      margin-bottom: 20px;
+    }
+
+    .navLinks {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 12px;
+      }
+
+      a {
+        color: #5e6282;
+        text-decoration: none;
+        transition: color 0.2s ease;
+        font-size: 16px;
+
+        &:hover {
+          color: #3b3c6a;
+        }
+      }
+    }
+  }
+
+  .socialAppWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 200px;
+  }
+
+  .socialMedia {
+    display: flex;
+    align-items: center;
+
+    .socialIcon {
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .discoverApp {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    span {
+      font-size: 16px;
+      text-align: center;
+      color: #5e6282;
+      font-weight: 500;
+    }
+
+    .appIcons {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      a {
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+
+  .footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: #5e6282;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 992px) {
+    padding: 60px 0 30px;
+
+    .footerContent {
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .navColumns {
+      gap: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column;
+    }
+
+    .socialAppWrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .discoverApp {
+      align-items: flex-end;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 40px 0 20px;
+
+    .socialAppWrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .discoverApp {
+      align-items: flex-start;
+    }
+
+    .navColumns {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
